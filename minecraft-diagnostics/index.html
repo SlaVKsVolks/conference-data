@@ -3,58 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Minecraft Crash Log Diagnostics | SlaVKs</title>
+  <title>Cheap Minecraft Modpack Optimization | SlaVKs</title>
   <style>
     :root { color-scheme: light; --ink:#172033; --muted:#5c667a; --line:#d7dde8; --bg:#f7f9fc; --panel:#fff; --accent:#1f7a5c; --accent2:#214f92; --warn:#7a4b14; }
     * { box-sizing: border-box; }
     body { margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--ink); background:var(--bg); line-height:1.55; }
-    header, main, footer { max-width: 1120px; margin: 0 auto; padding: 28px 20px; }
-    header { display:grid; grid-template-columns: 1.6fr .9fr; gap: 24px; align-items:center; min-height: 78vh; }
-    h1 { font-size: clamp(2rem, 5vw, 4.25rem); line-height:1.02; margin: 0 0 18px; letter-spacing: 0; }
-    h2 { font-size: 1.8rem; margin: 0 0 14px; }
-    h3 { margin: 0 0 8px; font-size: 1.05rem; }
-    p { margin: 0 0 14px; }
-    a { color: var(--accent2); }
-    .eyebrow { color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing:.05em; font-size:.82rem; }
-    .lead { font-size: 1.18rem; color: var(--muted); max-width: 760px; }
+    header, main, footer { max-width:1120px; margin:0 auto; padding:28px 20px; }
+    header { display:grid; grid-template-columns:1.6fr .9fr; gap:24px; align-items:center; min-height:76vh; }
+    h1 { font-size:clamp(2rem, 5vw, 4.15rem); line-height:1.02; margin:0 0 18px; letter-spacing:0; }
+    h2 { font-size:1.8rem; margin:0 0 14px; }
+    h3 { margin:0 0 8px; font-size:1.05rem; }
+    p { margin:0 0 14px; }
+    a { color:var(--accent2); }
+    .eyebrow { color:var(--accent); font-weight:700; text-transform:uppercase; letter-spacing:.05em; font-size:.82rem; }
+    .lead { font-size:1.16rem; color:var(--muted); max-width:760px; }
     .actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
-    .button { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding: 10px 15px; border-radius: 8px; border:1px solid var(--line); background:#fff; color:var(--ink); text-decoration:none; font-weight:700; }
-    .button.primary { background: var(--accent); color:#fff; border-color: var(--accent); }
-    .panel { background: var(--panel); border:1px solid var(--line); border-radius:8px; padding:18px; box-shadow: 0 12px 28px rgba(23,32,51,.06); }
-    .grid { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:14px; }
-    section { margin: 26px 0; }
-    .price { min-height: 100%; display:flex; flex-direction:column; justify-content:space-between; }
-    .price strong { font-size:1.6rem; }
-    ul { padding-left: 20px; margin: 10px 0 16px; }
-    li { margin: 6px 0; }
-    .notice { border-left: 4px solid var(--warn); background:#fff8ed; padding:14px 16px; border-radius:8px; }
-    .sample { font-family: Consolas, monospace; white-space: pre-wrap; background:#111827; color:#e5e7eb; border-radius:8px; padding:14px; overflow:auto; font-size:.9rem; }
-    .split { display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:10px 15px; border-radius:8px; border:1px solid var(--line); background:#fff; color:var(--ink); text-decoration:none; font-weight:700; }
+    .button.primary { background:var(--accent); color:#fff; border-color:var(--accent); }
+    .panel { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:18px; box-shadow:0 12px 28px rgba(23,32,51,.06); }
+    .grid { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:14px; }
+    section { margin:26px 0; }
+    .price { min-height:100%; display:flex; flex-direction:column; justify-content:space-between; }
+    .price strong { font-size:1.55rem; }
+    ul { padding-left:20px; margin:10px 0 16px; }
+    li { margin:6px 0; }
+    .notice { border-left:4px solid var(--warn); background:#fff8ed; padding:14px 16px; border-radius:8px; }
+    .sample { font-family:Consolas, monospace; white-space:pre-wrap; background:#111827; color:#e5e7eb; border-radius:8px; padding:14px; overflow:auto; font-size:.9rem; }
+    .split { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
     footer { color:var(--muted); font-size:.92rem; }
-    @media (max-width: 760px) { header, .grid, .split { grid-template-columns: 1fr; } header { min-height:auto; } }
+    @media (max-width:760px) { header, .grid, .split { grid-template-columns:1fr; } header { min-height:auto; } }
   </style>
 </head>
 <body>
   <header>
     <div>
-      <p class="eyebrow">Harness-backed Minecraft diagnostics</p>
-      <h1>Written crash-log and modpack diagnostics for stuck Minecraft launches.</h1>
-      <p class="lead">Send a crash report or latest.log and get a concise written read: likely cause, suspicious line/mod/error, and first safe fix steps. Larger cases can use my local NeoForge Modpack Test Harness workflow for structured load markers and deeper attribution.</p>
+      <p class="eyebrow">Founder pricing while I build first reviews</p>
+      <h1>Cheap Minecraft modpack optimization, crash help, and tiny custom utility mods.</h1>
+      <p class="lead">I am building my first review base, so prices are intentionally low. Send a crash report, latest.log, modlist, Minecraft version, loader/version, and what you want fixed or improved. I return a written diagnosis, suspicious mods/errors, and safe next steps. Larger cases can use my local NeoForge Modpack Test Harness workflow.</p>
       <div class="actions">
-        <a class="button primary" href="https://ko-fi.com/s/f633f838e4">Order $5 quick read</a>
+        <a class="button primary" href="https://ko-fi.com/s/f633f838e4">Order cheap first-client help</a>
         <a class="button" href="https://www.freelancer.com/service/minecraft/minecraft-modpack-log-mini-audit">Marketplace checkout</a>
       </div>
     </div>
     <div class="panel">
-      <h2>What you send</h2>
+      <h2>Founder prices</h2>
       <ul>
-        <li>latest.log or crash report</li>
-        <li>Minecraft version</li>
-        <li>Forge, Fabric, NeoForge, or Quilt version</li>
-        <li>What happens when it fails</li>
-        <li>What you already tried</li>
+        <li>$3 quick log look: likely cause, one suspicious line/mod, 2-3 first steps.</li>
+        <li>$5 crash-log diagnosis: one log, first 3 fix steps.</li>
+        <li>$10 starter modpack optimization: logs, modlist, Java/RAM/loader notes, written checklist.</li>
+        <li>$15 modpack mini-audit: one focused follow-up included.</li>
+        <li>$25 deeper harness-backed report when feasible.</li>
+        <li>$25-$50 tiny custom utility mods.</li>
       </ul>
-      <p><strong>No remote access by default. No credentials. No guaranteed fix. One issue per order.</strong></p>
     </div>
   </header>
 
@@ -64,25 +64,25 @@
       <div class="grid">
         <article class="panel price">
           <div>
-            <h3>Quick crash-log read</h3>
-            <strong>$5</strong>
-            <ul><li>One log</li><li>Likely cause category</li><li>Suspicious line/mod</li><li>First 3 safe steps</li></ul>
+            <h3>Quick crash-log look</h3>
+            <strong>$3-$5</strong>
+            <ul><li>One log or crash report</li><li>Likely cause and suspicious line/mod</li><li>First 2-3 safe steps</li><li>Max 10-20 minutes</li></ul>
           </div>
           <a class="button primary" href="https://ko-fi.com/s/f633f838e4">Order on Ko-fi</a>
         </article>
         <article class="panel price">
           <div>
-            <h3>Priority same-day diagnosis</h3>
+            <h3>Starter modpack optimization</h3>
             <strong>$10</strong>
-            <ul><li>One log or crash report</li><li>Loader, Java, memory notes</li><li>Prioritized fix steps</li></ul>
+            <ul><li>Logs plus modlist review</li><li>Basic Java, RAM, loader, and launcher notes</li><li>Written optimization checklist</li><li>Up to 4 hours during founder pricing</li></ul>
           </div>
           <a class="button primary" href="https://ko-fi.com/s/13a39a4a55">Order on Ko-fi</a>
         </article>
         <article class="panel price">
           <div>
-            <h3>Log + modlist mini-audit</h3>
-            <strong>$20</strong>
-            <ul><li>Crash log plus modlist</li><li>Likely conflict or dependency issue</li><li>Loader/version notes</li></ul>
+            <h3>Mini-audit or harness report</h3>
+            <strong>$15-$25</strong>
+            <ul><li>Top conflict/performance suspects</li><li>Prioritized fix plan</li><li>$25 deeper harness-backed report if feasible</li></ul>
           </div>
           <a class="button primary" href="https://ko-fi.com/s/7ca8291a5a">Order on Ko-fi</a>
         </article>
@@ -91,23 +91,36 @@
 
     <section class="split">
       <article class="panel">
+        <h2>Tiny custom utility mods</h2>
+        <p>Founder price: $25-$50 for one very small fixed-scope Minecraft utility mod.</p>
+        <ul><li>Simple command</li><li>Config helper</li><li>Small QoL feature</li><li>Debug/logging helper</li><li>Simple event hook</li></ul>
+        <p>Not taking hacked clients, cheats, backdoors, token/password work, or large mod systems.</p>
+      </article>
+      <article class="panel">
+        <h2>Starter recurring support</h2>
+        <p>For server or modpack owners who keep hitting update/crash issues.</p>
+        <ul><li>$10/month: one log review</li><li>$25/month: two log reviews or one update-risk check</li></ul>
+      </article>
+    </section>
+
+    <section class="split">
+      <article class="panel">
         <h2>Marketplace checkout</h2>
         <p>Use Freelancer if you prefer platform order tracking.</p>
-        <p><a href="https://www.freelancer.com/service/debugging/minecraft-crash-log-and-small-bug-diagnosis">$15 Minecraft crash-log and small bug diagnosis</a></p>
-        <p><a href="https://www.freelancer.com/service/minecraft/minecraft-modpack-log-mini-audit">$20 Minecraft modpack log mini-audit</a></p>
+        <p><a href="https://www.freelancer.com/service/debugging/minecraft-crash-log-and-small-bug-diagnosis">$15 Freelancer fallback: crash-log and small bug diagnosis</a></p>
+        <p><a href="https://www.freelancer.com/service/minecraft/minecraft-modpack-log-mini-audit">$20 Freelancer fallback: modpack log mini-audit</a></p>
         <p><a href="https://www.freelancer.com/service/python/small-python-or-website-bug-diagnosis">$15 small Python or website bug diagnosis</a></p>
       </article>
       <article class="panel">
-        <h2>Recurring server/modpack support</h2>
-        <p>For server or modpack owners, a small monthly diagnostic retainer can cover recurring update and crash triage.</p>
-        <ul><li>$25/month: one log review or update-risk note</li><li>$50/month: two priority diagnostics</li><li>$100/month: weekly check plus written mod/update notes</li></ul>
+        <h2>What you send</h2>
+        <ul><li>latest.log or crash report</li><li>modlist if available</li><li>Minecraft version</li><li>Forge, Fabric, NeoForge, or Quilt version</li><li>RAM/JVM settings if available</li><li>What you want fixed or improved</li></ul>
       </article>
     </section>
 
     <section class="panel">
       <p class="eyebrow">Proof of workflow</p>
       <h2>Why this is not just a generic stack-trace guess</h2>
-      <p>For difficult modpack startup and performance cases, I maintain a local NeoForge diagnostic harness that can mark load/world-entry phases, representative routes, cleanup events, and suspicious mod/runtime signals. Quick $5 orders are focused log reads; deeper paid scopes can use harness-backed investigation when appropriate.</p>
+      <p>For difficult modpack startup and performance cases, I maintain a local NeoForge diagnostic harness that can mark load/world-entry phases, representative routes, cleanup events, and suspicious mod/runtime signals. Quick orders are focused written passes; deeper scopes can use harness-backed investigation when appropriate.</p>
       <ul>
         <li>Load and world-entry markers help separate root cause from later log noise.</li>
         <li>Mod-specific signals can highlight Mixin, loader, dependency, memory, and rendering conflicts.</li>
@@ -123,21 +136,21 @@ Suspicious line: java.lang.NoSuchMethodError near mod initialization.
 First steps:
 1. Match the mod version to your exact loader and Minecraft version.
 2. Disable the named suspect mod and relaunch once.
-3. If the crash changes, send the new latest.log for the next focused pass.</div>
+3. If the crash changes, capture the new latest.log for the next focused pass.</div>
       </article>
       <article class="panel">
-        <h2>Sample modpack mini-audit</h2>
-        <div class="sample">Likely cause: dependency conflict during client setup.
+        <h2>Sample optimization mini-audit</h2>
+        <div class="sample">Likely cause: dependency conflict during client setup plus memory pressure.
 Suspects: mismatched API/library mod and a rendering integration.
 Checklist:
-1. Confirm Java version and loader version.
+1. Confirm Java version, loader version, and RAM/JVM flags.
 2. Update or remove the suspect dependency pair.
 3. Re-test with the same world and capture a fresh latest.log.</div>
       </article>
     </section>
 
     <section class="notice">
-      <strong>Scope limits:</strong> I do not ask for passwords, server panels, private tokens, payment dashboards, or remote access by default. I do not guarantee fixes, FPS gains, uptime, or compatibility with every modpack.
+      <strong>Scope limits:</strong> Low price does not mean unlimited work. I do not ask for passwords, server panels, private tokens, payment dashboards, or remote access by default. I do not guarantee fixes, FPS gains, uptime, or compatibility with every modpack.
     </section>
   </main>
 

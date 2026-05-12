@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Minecraft Crash Diagnosis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section>
+      <p class="eyebrow">Sample $5 report</p>
+      <h1>Minecraft Crash-Log Quick Diagnosis</h1>
+      <p>This is a sample structure. Real reports are based on the buyer's actual log. Larger modpack cases can be escalated to a harness-backed mini-audit when the log suggests startup, world-entry, or route-performance ambiguity.</p>
+    </section>
+
+    <section>
+      <h2>Likely Cause</h2>
+      <p>Missing dependency or wrong mod version for the active loader. The crash points to a mod class loading failure before the game finishes startup.</p>
+    </section>
+
+    <section>
+      <h2>Suspicious Line / Mod / Error</h2>
+      <pre><code>java.lang.NoClassDefFoundError: com/example/library/ConfigApi
+Caused by: java.lang.ClassNotFoundException: com.example.library.ConfigApi</code></pre>
+      <p>Suspicious item: the mod requiring `ConfigApi` loaded, but the dependency was not found in the mod folder.</p>
+    </section>
+
+    <section>
+      <h2>First 3 Fix Steps</h2>
+      <ol>
+        <li>Check the mod page for required dependencies and install the matching Minecraft/loader version.</li>
+        <li>Confirm all mods target the same loader family: Forge, Fabric, or NeoForge.</li>
+        <li>Move recently added mods out temporarily and relaunch with the dependency installed.</li>
+      </ol>
+      <p>No guaranteed fix. This is a written diagnostic, not remote repair.</p>
+      <a class="button primary" href="https://ko-fi.com/s/f633f838e4">Order a $5 quick read</a>
+      <a class="button" href="harness-proof.html">View harness proof</a>
+    </section>
+  </main>
+</body>
+</html>

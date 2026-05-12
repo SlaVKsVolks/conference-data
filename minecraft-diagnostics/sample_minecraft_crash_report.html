@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Minecraft Crash Report</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section>
+      <p class="eyebrow">Sample proof asset</p>
+      <h1>Minecraft Crash-Log Quick Diagnosis</h1>
+      <p>This sample shows the format of a quick written diagnosis. It is based on a synthetic example, not a buyer file.</p>
+    </section>
+
+    <section>
+      <h2>Likely Issue Category</h2>
+      <p>Missing dependency with a secondary Mixin failure. The first useful error appears before normal startup finishes.</p>
+    </section>
+
+    <section>
+      <h2>Suspicious Line / Mod / Error</h2>
+      <pre><code>[main/ERROR] Missing or unsupported mandatory dependencies:
+Mod ID: architectury, Requested by: fancywidgets
+[main/FATAL] Mixin apply failed fancywidgets.mixins.json:ScreenMixin
+Caused by: java.lang.ClassNotFoundException: dev.architectury.event.EventResult</code></pre>
+      <p>Suspicious items: <strong>architectury</strong>, <strong>fancywidgets</strong>, and the missing <strong>dev.architectury</strong> class.</p>
+    </section>
+
+    <section>
+      <h2>First 3 Safe Steps</h2>
+      <ol>
+        <li>Install the Architectury build matching the exact Minecraft version and loader.</li>
+        <li>Confirm FancyWidgets is for the same loader family as the instance.</li>
+        <li>Relaunch once with only this dependency change before editing unrelated mods.</li>
+      </ol>
+      <p>No guaranteed fix. No remote access. No credentials. Written diagnostic only.</p>
+      <a class="button primary" href="https://ko-fi.com/s/f633f838e4">Order a $5 quick read</a>
+    </section>
+  </main>
+</body>
+</html>

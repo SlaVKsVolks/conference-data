@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Modpack Mini-Audit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section>
+      <p class="eyebrow">Sample $20 report</p>
+      <h1>Minecraft Log + Modlist Mini-Audit</h1>
+      <p>This is a sample structure for a modpack where the log and modlist both matter.</p>
+    </section>
+
+    <section>
+      <h2>Likely Conflict Category</h2>
+      <p>Loader/version mismatch plus a possible missing dependency. Two mods appear to target a different minor Minecraft version than the active instance.</p>
+    </section>
+
+    <section>
+      <h2>Mod / Version Suspects</h2>
+      <ul>
+        <li>`example-storage-forge-1.20.1.jar` in a 1.21 instance.</li>
+        <li>`library-core` missing or installed for the wrong loader.</li>
+        <li>Mixin failure starts after the suspect mod initializes.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Prioritized Checklist</h2>
+      <ol>
+        <li>Confirm the instance Minecraft version and loader version.</li>
+        <li>Replace suspect mods with matching version builds from the original mod pages.</li>
+        <li>Add required dependencies listed on each suspect mod page.</li>
+        <li>Test launch with only the suspect cluster disabled/enabled to isolate the conflict.</li>
+        <li>Keep a backup of the current mod folder before making changes.</li>
+      </ol>
+      <a class="button primary" href="https://ko-fi.com/s/7ca8291a5a">Order a $20 mini-audit</a>
+    </section>
+  </main>
+</body>
+</html>

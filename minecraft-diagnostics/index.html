@@ -3,159 +3,310 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cheap Minecraft Modpack Optimization | SlaVKs</title>
-  <style>
-    :root { color-scheme: light; --ink:#172033; --muted:#5c667a; --line:#d7dde8; --bg:#f7f9fc; --panel:#fff; --accent:#1f7a5c; --accent2:#214f92; --warn:#7a4b14; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--ink); background:var(--bg); line-height:1.55; }
-    header, main, footer { max-width:1120px; margin:0 auto; padding:28px 20px; }
-    header { display:grid; grid-template-columns:1.6fr .9fr; gap:24px; align-items:center; min-height:76vh; }
-    h1 { font-size:clamp(2rem, 5vw, 4.15rem); line-height:1.02; margin:0 0 18px; letter-spacing:0; }
-    h2 { font-size:1.8rem; margin:0 0 14px; }
-    h3 { margin:0 0 8px; font-size:1.05rem; }
-    p { margin:0 0 14px; }
-    a { color:var(--accent2); }
-    .eyebrow { color:var(--accent); font-weight:700; text-transform:uppercase; letter-spacing:.05em; font-size:.82rem; }
-    .lead { font-size:1.16rem; color:var(--muted); max-width:760px; }
-    .actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
-    .button { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:10px 15px; border-radius:8px; border:1px solid var(--line); background:#fff; color:var(--ink); text-decoration:none; font-weight:700; }
-    .button.primary { background:var(--accent); color:#fff; border-color:var(--accent); }
-    .panel { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:18px; box-shadow:0 12px 28px rgba(23,32,51,.06); }
-    .grid { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:14px; }
-    section { margin:26px 0; }
-    .price { min-height:100%; display:flex; flex-direction:column; justify-content:space-between; }
-    .price strong { font-size:1.55rem; }
-    ul { padding-left:20px; margin:10px 0 16px; }
-    li { margin:6px 0; }
-    .notice { border-left:4px solid var(--warn); background:#fff8ed; padding:14px 16px; border-radius:8px; }
-    .sample { font-family:Consolas, monospace; white-space:pre-wrap; background:#111827; color:#e5e7eb; border-radius:8px; padding:14px; overflow:auto; font-size:.9rem; }
-    .split { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-    footer { color:var(--muted); font-size:.92rem; }
-    @media (max-width:760px) { header, .grid, .split { grid-template-columns:1fr; } header { min-height:auto; } }
-  </style>
+  <title>Cheap Minecraft Modpack Optimization</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header class="topbar">
     <div>
       <p class="eyebrow">Founder pricing while I build first reviews</p>
-      <h1>Cheap Minecraft modpack optimization, crash help, and tiny custom utility mods.</h1>
-      <p class="lead">I am building my first review base, so prices are intentionally low. Send a crash report, latest.log, modlist, Minecraft version, loader/version, and what you want fixed or improved. I return a written diagnosis, suspicious mods/errors, and safe next steps. Larger cases can use my local NeoForge Modpack Test Harness workflow.</p>
-      <div class="actions">
-        <a class="button primary" href="https://ko-fi.com/s/f633f838e4">Order cheap first-client help</a>
-        <a class="button" href="https://www.freelancer.com/service/minecraft/minecraft-modpack-log-mini-audit">Marketplace checkout</a>
-      </div>
+      <h1>Cheap Minecraft modpack optimization, crash help, and tiny custom utility mods</h1>
+      <p class="lead">I am building my first review base, so prices are intentionally low. Send a crash report, latest.log, modlist, Minecraft version, loader/version, and what you want fixed or improved. I return a written diagnosis, suspicious mods/errors, and safe next steps. Larger cases can draw on my local NeoForge Modpack Test Harness workflow.</p>
     </div>
-    <div class="panel">
-      <h2>Founder prices</h2>
-      <ul>
-        <li>$3 quick log look: likely cause, one suspicious line/mod, 2-3 first steps.</li>
-        <li>$5 crash-log diagnosis: one log, first 3 fix steps.</li>
-        <li>$10 starter modpack optimization: logs, modlist, Java/RAM/loader notes, written checklist.</li>
-        <li>$15 modpack mini-audit: one focused follow-up included.</li>
-        <li>$25 deeper harness-backed report when feasible.</li>
-        <li>$25-$50 tiny custom utility mods.</li>
-      </ul>
-    </div>
+    <nav aria-label="Primary actions">
+      <a class="button primary" href="https://ko-fi.com/s/f633f838e4">Order cheap first-client help</a>
+      <a class="button" href="harness-proof.html">View harness proof</a>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Order options</h2>
-      <div class="grid">
-        <article class="panel price">
-          <div>
-            <h3>Quick crash-log look</h3>
-            <strong>$3-$5</strong>
-            <ul><li>One log or crash report</li><li>Likely cause and suspicious line/mod</li><li>First 2-3 safe steps</li><li>Max 10-20 minutes</li></ul>
-          </div>
+    <section class="pricing" aria-labelledby="pricing-title">
+      <h2 id="pricing-title">Order Options</h2>
+      <div class="price-grid">
+        <article class="price-card">
+          <h3>$3-$5 Quick Crash-Log Look</h3>
+          <p>Best for one crash report or one latest.log when you want the cheapest first pass.</p>
+          <ul>
+            <li>$3: likely cause, one suspicious line/mod, 2-3 first steps</li>
+            <li>$5: fuller crash-log diagnosis with first 3 fix steps</li>
+            <li>Max 10-20 minutes depending on option</li>
+          </ul>
           <a class="button primary" href="https://ko-fi.com/s/f633f838e4">Order on Ko-fi</a>
         </article>
-        <article class="panel price">
-          <div>
-            <h3>Starter modpack optimization</h3>
-            <strong>$10</strong>
-            <ul><li>Logs plus modlist review</li><li>Basic Java, RAM, loader, and launcher notes</li><li>Written optimization checklist</li><li>Up to 4 hours during founder pricing</li></ul>
-          </div>
+
+        <article class="price-card emphasized">
+          <h3>$10 Starter Modpack Optimization</h3>
+          <p>Best for first-client modpack crash, startup, or basic performance help.</p>
+          <ul>
+            <li>Logs plus modlist review</li>
+            <li>Basic Java, RAM, loader, and launcher notes</li>
+            <li>Written optimization checklist</li>
+            <li>Up to 4 hours during founder-pricing phase</li>
+          </ul>
           <a class="button primary" href="https://ko-fi.com/s/13a39a4a55">Order on Ko-fi</a>
         </article>
-        <article class="panel price">
-          <div>
-            <h3>Mini-audit or harness report</h3>
-            <strong>$15-$25</strong>
-            <ul><li>Top conflict/performance suspects</li><li>Prioritized fix plan</li><li>$25 deeper harness-backed report if feasible</li></ul>
-          </div>
+
+        <article class="price-card">
+          <h3>$15-$25 Mini-Audit Or Harness Report</h3>
+          <p>Best when one quick log read is not enough.</p>
+          <ul>
+            <li>$15: modpack mini-audit with one follow-up question</li>
+            <li>$25: deeper harness-backed report if feasible</li>
+            <li>Top conflict/performance suspects and prioritized fix plan</li>
+          </ul>
           <a class="button primary" href="https://ko-fi.com/s/7ca8291a5a">Order on Ko-fi</a>
         </article>
       </div>
     </section>
 
-    <section class="split">
-      <article class="panel">
-        <h2>Tiny custom utility mods</h2>
-        <p>Founder price: $25-$50 for one very small fixed-scope Minecraft utility mod.</p>
-        <ul><li>Simple command</li><li>Config helper</li><li>Small QoL feature</li><li>Debug/logging helper</li><li>Simple event hook</li></ul>
-        <p>Not taking hacked clients, cheats, backdoors, token/password work, or large mod systems.</p>
-      </article>
-      <article class="panel">
-        <h2>Starter recurring support</h2>
-        <p>For server or modpack owners who keep hitting update/crash issues.</p>
-        <ul><li>$10/month: one log review</li><li>$25/month: two log reviews or one update-risk check</li></ul>
-      </article>
+    <section class="marketplace" aria-labelledby="custom-mods-title">
+      <h2 id="custom-mods-title">Tiny Custom Utility Mods</h2>
+      <p>Founder price for small, fixed-scope Minecraft utility mods: <strong>$25-$50</strong>. Good fits include a simple command, config helper, small QoL feature, debug/logging helper, or simple event hook. I am not taking hacked clients, cheats, backdoors, token/password work, or large mod systems.</p>
     </section>
 
-    <section class="split">
-      <article class="panel">
-        <h2>Marketplace checkout</h2>
-        <p>Use Freelancer if you prefer platform order tracking.</p>
-        <p><a href="https://www.freelancer.com/service/debugging/minecraft-crash-log-and-small-bug-diagnosis">$15 Freelancer fallback: crash-log and small bug diagnosis</a></p>
-        <p><a href="https://www.freelancer.com/service/minecraft/minecraft-modpack-log-mini-audit">$20 Freelancer fallback: modpack log mini-audit</a></p>
-        <p><a href="https://www.freelancer.com/service/python/small-python-or-website-bug-diagnosis">$15 small Python or website bug diagnosis</a></p>
-      </article>
-      <article class="panel">
-        <h2>What you send</h2>
-        <ul><li>latest.log or crash report</li><li>modlist if available</li><li>Minecraft version</li><li>Forge, Fabric, NeoForge, or Quilt version</li><li>RAM/JVM settings if available</li><li>What you want fixed or improved</li></ul>
-      </article>
+    <section class="marketplace" aria-labelledby="marketplace-title">
+      <h2 id="marketplace-title">Marketplace Checkout</h2>
+      <p>Use Freelancer if you prefer marketplace order tracking.</p>
+      <div class="link-list">
+        <a href="https://www.freelancer.com/service/debugging/minecraft-crash-log-and-small-bug-diagnosis">$15 Freelancer fallback: Minecraft crash-log and small bug diagnosis</a>
+        <a href="https://www.freelancer.com/service/minecraft/minecraft-modpack-log-mini-audit">$20 Freelancer fallback: Minecraft modpack log mini-audit</a>
+        <a href="https://www.freelancer.com/service/python/small-python-or-website-bug-diagnosis">$15 small Python or website bug diagnosis</a>
+      </div>
     </section>
 
-    <section class="panel">
-      <p class="eyebrow">Proof of workflow</p>
-      <h2>Why this is not just a generic stack-trace guess</h2>
-      <p>For difficult modpack startup and performance cases, I maintain a local NeoForge diagnostic harness that can mark load/world-entry phases, representative routes, cleanup events, and suspicious mod/runtime signals. Quick orders are focused written passes; deeper scopes can use harness-backed investigation when appropriate.</p>
-      <ul>
-        <li>Load and world-entry markers help separate root cause from later log noise.</li>
-        <li>Mod-specific signals can highlight Mixin, loader, dependency, memory, and rendering conflicts.</li>
-        <li>Written reports stay scoped: likely cause, evidence line, first safe steps, and caveats.</li>
-      </ul>
+    <section class="marketplace" aria-labelledby="small-fixes-title">
+      <p class="eyebrow">Small non-Minecraft fixes</p>
+      <h2 id="small-fixes-title">Cheap first-client micro-fixes for files, scripts, and websites</h2>
+      <p>These are fallback volume offers for small focused tasks. Minecraft remains the main niche, but I can also handle contained non-sensitive fixes that do not require credentials or admin access by default.</p>
+      <div class="price-grid">
+        <article class="price-card">
+          <h3>$5-$35 CSV / Spreadsheet Cleanup</h3>
+          <p>Best for one non-sensitive CSV/XLSX with duplicates, blank rows, extra spaces, repeated headers, simple split/merge columns, or basic formatting cleanup.</p>
+          <ul>
+            <li>$5 diagnosis, $10 cleanup preview, $15-$35 small cleanup</li>
+            <li>Deliverable: cleaned file or preview, issue summary, before/after notes</li>
+            <li>No tax, payroll, bank, medical, legal, CPF/private datasets</li>
+          </ul>
+        </article>
+
+        <article class="price-card emphasized">
+          <h3>$5-$30 Python Script Fix</h3>
+          <p>Best for one traceback, import error, CSV script bug, simple automation error, or broken data transform.</p>
+          <ul>
+            <li>$5-$10 diagnosis, $15-$30 small contained fix</li>
+            <li>Deliverable: fixed script/patch or exact written diagnosis</li>
+            <li>No credential automation, abuse scraping, malware, bypassing, tokens, or private secrets</li>
+          </ul>
+          <a class="button primary" href="https://www.freelancer.com/service/python/small-python-or-website-bug-diagnosis">Use Freelancer checkout</a>
+        </article>
+
+        <article class="price-card">
+          <h3>$5-$25 Tiny HTML / CSS Fix</h3>
+          <p>Best for one visible website issue such as a mobile layout bug, broken button, CSS alignment issue, small JavaScript error, or one page looking wrong.</p>
+          <ul>
+            <li>$5 diagnosis, $10-$25 focused HTML/CSS/JS patch</li>
+            <li>Deliverable: patch/snippet plus short explanation</li>
+            <li>No production credentials, full redesign, checkout/payment changes, or unsafe scripts</li>
+          </ul>
+          <a class="button primary" href="https://www.freelancer.com/service/python/small-python-or-website-bug-diagnosis">Use Freelancer checkout</a>
+        </article>
+      </div>
+      <div class="two-column">
+        <div>
+          <h3>Also available by written scope</h3>
+          <ul>
+            <li>QA bug report pass: $5-$20</li>
+            <li>Data entry or public web research paid test: $5-$15</li>
+            <li>WordPress/Shopify diagnosis from screenshots, public URL, exported HTML, or logs: $10-$25</li>
+            <li>Windows performance report from screenshots/log exports: $10-$25</li>
+            <li>AI/ChatGPT workflow setup: $10-$30</li>
+            <li>Discord server setup/cleanup plan: $10-$35</li>
+            <li>Resume/GitHub/portfolio cleanup: $5-$20</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Non-Minecraft boundaries</h3>
+          <ul>
+            <li>No passwords, OTPs, tokens, or private credentials</li>
+            <li>No bank/card/tax/CPF, medical, payroll, legal, or sensitive identity data</li>
+            <li>No admin access by default</li>
+            <li>One issue, one file batch, or one focused report per low-price order</li>
+            <li>Non-Minecraft Ko-fi products are pending; do not use Minecraft-labeled products for these jobs</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section class="split">
-      <article class="panel">
-        <h2>Sample crash-log report</h2>
-        <div class="sample">Likely cause: loader/mod version mismatch.
-Suspicious line: java.lang.NoSuchMethodError near mod initialization.
-First steps:
-1. Match the mod version to your exact loader and Minecraft version.
-2. Disable the named suspect mod and relaunch once.
-3. If the crash changes, capture the new latest.log for the next focused pass.</div>
-      </article>
-      <article class="panel">
-        <h2>Sample optimization mini-audit</h2>
-        <div class="sample">Likely cause: dependency conflict during client setup plus memory pressure.
-Suspects: mismatched API/library mod and a rendering integration.
-Checklist:
-1. Confirm Java version, loader version, and RAM/JVM flags.
-2. Update or remove the suspect dependency pair.
-3. Re-test with the same world and capture a fresh latest.log.</div>
-      </article>
+    <section class="marketplace" aria-labelledby="coding-micro-fixes-title">
+      <p class="eyebrow">Focused coding diagnostics</p>
+      <h2 id="coding-micro-fixes-title">Repo, CI, build, test, and automation micro-fixes</h2>
+      <p>I can inspect one repo, error, log, PR, file, or failing workflow and return the likely cause, exact suspicious file/line/error, first fix steps, and a small patch if included in scope. This is sold as a focused technical outcome, not broad app development.</p>
+      <div class="price-grid">
+        <article class="price-card emphasized">
+          <h3>$5-$25 Repo Bug Diagnosis</h3>
+          <p>Best for one coding bug, build error, stack trace, or expected-behavior mismatch.</p>
+          <ul>
+            <li>$5 quick diagnosis, $10 written report, $25 small patch if feasible</li>
+            <li>Buyer sends repo/files, error, command, expected behavior, and runtime/version</li>
+            <li>No production credentials, private secrets, malware, bypassing, or broad app rewrites</li>
+          </ul>
+          <a class="button primary" href="https://www.freelancer.com/service/python/small-python-or-website-bug-diagnosis">Use Freelancer checkout</a>
+        </article>
+
+        <article class="price-card">
+          <h3>$10-$50 CI Failure Fix</h3>
+          <p>Best for one failing GitHub Actions or similar CI workflow.</p>
+          <ul>
+            <li>$10 diagnosis, $25 small workflow/config patch, $50 patch plus verification if runnable</li>
+            <li>Buyer sends CI log, workflow file if safe, failing job name, and expected command/result</li>
+            <li>No private tokens, deploy credentials, paid runner setup, or production secrets</li>
+          </ul>
+        </article>
+
+        <article class="price-card">
+          <h3>$10-$50 Build / Dependency Fix</h3>
+          <p>Best for one npm, pip, cargo, dotnet, or similar build/dependency error.</p>
+          <ul>
+            <li>Diagnosis or small patch with safe dependency/config change</li>
+            <li>Buyer sends package manager, error log, package/lock files if safe, OS/runtime, and failing command</li>
+            <li>No credentialed registries, private tokens, unsafe upgrades, or broad modernization</li>
+          </ul>
+        </article>
+
+        <article class="price-card">
+          <h3>$15-$50 Automation Script</h3>
+          <p>Best for a small local Python helper such as a file renamer, CSV parser, report generator, folder cleanup helper, or text/data transform.</p>
+          <ul>
+            <li>Buyer sends sample input, desired output, rules, OS/runtime, and allowed libraries</li>
+            <li>Deliverable: script plus usage notes</li>
+            <li>No credential automation, scraping abuse, spam, malware, bypassing, tokens, or private secrets</li>
+          </ul>
+        </article>
+      </div>
+      <div class="two-column">
+        <div>
+          <h3>Also available by written scope</h3>
+          <ul>
+            <li>Small PR cleanup: $10-$50</li>
+            <li>Test writing or test repair: $15-$50</li>
+            <li>Codebase orientation report: $10-$25</li>
+            <li>Static website fix pack: $10-$35</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Coding boundaries</h3>
+          <ul>
+            <li>No passwords, OTPs, API keys, tokens, private secrets, or production credentials by default</li>
+            <li>No malware, exploit work, bypassing, scraping abuse, spam, or account abuse</li>
+            <li>One issue, one PR, one workflow, one script, or one static website problem per low-price order</li>
+            <li>Ko-fi/Fiverr coding products are pending; Python/static website work can use the Freelancer checkout</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section class="notice">
-      <strong>Scope limits:</strong> Low price does not mean unlimited work. No remote access by default. No credentials. No guaranteed fix or FPS gain. I do not ask for passwords, server panels, private tokens, payment dashboards, or private server secrets.
+    <section class="proof" aria-labelledby="proof-title">
+      <div>
+        <p class="eyebrow">Why this is not a generic log guess</p>
+        <h2 id="proof-title">A real Minecraft diagnostic harness sits behind the workflow</h2>
+        <p>For difficult modpack startup and performance cases, I maintain a local NeoForge harness mod that emits structured markers while Minecraft loads, enters the world, runs a representative route, and records cleanup or scheduler events. That gives paid diagnostics a stronger technical base than only searching a stack trace.</p>
+      </div>
+      <div class="proof-grid">
+        <article class="proof-card">
+          <strong>Load and world-entry markers</strong>
+          <span>Resource reload, model bake, shader init, world-ready, and route-completion phases help separate root cause from later log noise.</span>
+        </article>
+        <article class="proof-card">
+          <strong>Mod-specific attribution</strong>
+          <span>Existing signals track Xaero, Voxy, Sodium, EMI, JEI, Jade, ResourcefulLib, and other common modpack pressure points.</span>
+        </article>
+        <article class="proof-card">
+          <strong>Written evidence trail</strong>
+          <span>The output style is a concise report with suspicious line/mod/error and safe first steps, not remote access or unsupported promises.</span>
+        </article>
+      </div>
+      <a class="button" href="harness-proof.html">See the harness capability card</a>
+    </section>
+
+    <section class="how" aria-labelledby="how-title">
+      <h2 id="how-title">How It Works</h2>
+      <ol>
+        <li>Order the matching option.</li>
+        <li>Send `latest.log` or crash report, Minecraft version, loader/version, and what happens when it crashes.</li>
+        <li>Receive a written report with the likely cause, suspicious line/mod/error, and safe next steps.</li>
+      </ol>
+    </section>
+
+    <section class="samples" aria-labelledby="samples-title">
+      <h2 id="samples-title">Sample Deliverables</h2>
+      <div class="sample-grid">
+        <a class="sample-card" href="sample_minecraft_crash_report.html">
+          <strong>Cheap crash-log diagnosis</strong>
+          <span>See the shape of a $3-$5 report.</span>
+        </a>
+        <a class="sample-card" href="harness-proof.html">
+          <strong>Harness-backed triage proof</strong>
+          <span>See the technical workflow behind larger modpack cases.</span>
+        </a>
+        <a class="sample-card" href="sample_modpack_mini_audit.html">
+          <strong>Modpack optimization mini-audit</strong>
+          <span>See the shape of a $10-$15 founder-price report.</span>
+        </a>
+        <a class="sample-card" href="sample_python_debug_report.html">
+          <strong>Python/website bug diagnostic</strong>
+          <span>See the shape of a $15 coding report.</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="screenshots" aria-labelledby="screenshots-title">
+      <h2 id="screenshots-title">Screenshot Proof Assets</h2>
+      <div class="sample-grid">
+        <a class="sample-card" href="sample_minecraft_crash_report.png">
+          <strong>Minecraft crash report PNG</strong>
+          <span>Static screenshot for marketplace galleries.</span>
+        </a>
+        <a class="sample-card" href="sample_modpack_mini_audit.png">
+          <strong>Modpack mini-audit PNG</strong>
+          <span>Static screenshot for portfolio proof.</span>
+        </a>
+        <a class="sample-card" href="sample_python_debug_report.png">
+          <strong>Python debug report PNG</strong>
+          <span>Static screenshot for coding/debug listings.</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="boundaries" aria-labelledby="boundaries-title">
+      <h2 id="boundaries-title">Scope And Boundaries</h2>
+      <div class="two-column">
+        <div>
+          <h3>Good fit</h3>
+          <ul>
+            <li>One Minecraft crash log</li>
+            <li>Forge, Fabric, NeoForge, or modpack launch errors</li>
+            <li>Exit Code 1 with a log attached</li>
+            <li>Basic modpack optimization and RAM/JVM/launcher review</li>
+            <li>Tiny custom utility mods with one clear feature</li>
+            <li>One small Python, website, or build error</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Not included</h3>
+          <ul>
+            <li>No remote access by default</li>
+            <li>No account credentials or private server secrets</li>
+            <li>No guaranteed fix or FPS guarantee</li>
+            <li>No full modpack rebuild in a quick diagnostic</li>
+            <li>No hacked clients, cheats, backdoors, or large mod systems</li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>Service by SlaVKs / @SlaVKsRub. Last updated 2026-05-12. Payments handled through Ko-fi or Freelancer marketplace checkout.</p>
+      <p>Written diagnostic only. One issue per order. Local files are reviewed only when you choose to send them.</p>
   </footer>
 </body>
 </html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Modpack Mini Audit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section>
+      <p class="eyebrow">Sample proof asset</p>
+      <h1>Minecraft Log + Modlist Mini-Audit</h1>
+      <p>This sample shows the shape of a mini-audit when both the crash log and modlist are relevant.</p>
+    </section>
+
+    <section>
+      <h2>Likely Issue Category</h2>
+      <p>Mixed loader/version risk plus one missing dependency cluster. The modlist suggests several jars may not match the active NeoForge 1.20.1 instance.</p>
+    </section>
+
+    <section>
+      <h2>Suspect Cluster</h2>
+      <ul>
+        <li><code>example-storage-fabric-1.20.1.jar</code> appears in a NeoForge instance.</li>
+        <li><code>library-core</code> is referenced by the log but missing from the modlist.</li>
+        <li><code>visualwidgets</code> throws a Mixin failure after dependency resolution fails.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Prioritized Checklist</h2>
+      <ol>
+        <li>Backup the current mods folder before changing jars.</li>
+        <li>Replace Fabric-only jars with NeoForge builds or remove them.</li>
+        <li>Add the required library dependency for the same Minecraft version.</li>
+        <li>Relaunch and compare the new first fatal/error block.</li>
+      </ol>
+      <p>No full modpack rebuild is included in the mini-audit. No guaranteed fix.</p>
+      <a class="button primary" href="https://ko-fi.com/s/7ca8291a5a">Order a $20 Ko-fi mini-audit</a>
+      <a class="button" href="https://www.freelancer.com/service/minecraft/minecraft-modpack-log-mini-audit">Order through Freelancer</a>
+    </section>
+  </main>
+</body>
+</html>

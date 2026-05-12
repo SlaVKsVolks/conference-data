@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Python Debug Report</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section>
+      <p class="eyebrow">Sample proof asset</p>
+      <h1>Small Python / Website Bug Diagnosis</h1>
+      <p>This sample shows the format for one small coding or build/config issue purchased through the Freelancer diagnosis offer.</p>
+    </section>
+
+    <section>
+      <h2>Likely Issue Category</h2>
+      <p>Input schema mismatch. The script assumes a normalized <code>email</code> column, but the CSV header contains spacing and capitalization differences.</p>
+    </section>
+
+    <section>
+      <h2>Suspicious File / Error</h2>
+      <pre><code>KeyError: 'email'
+df['email'] = df['email'].str.lower()</code></pre>
+      <p>The likely mismatch is a header such as <code>Email </code> or <code>E-mail</code> while the code expects exactly <code>email</code>.</p>
+    </section>
+
+    <section>
+      <h2>First 3 Safe Steps</h2>
+      <ol>
+        <li>Print <code>df.columns.tolist()</code> immediately after reading the CSV.</li>
+        <li>Normalize headers with <code>df.columns = df.columns.str.strip().str.lower()</code>.</li>
+        <li>Rerun against a small sample file before processing the full dataset.</li>
+      </ol>
+      <p>No credentials. No production remote access by default. Written diagnostic only.</p>
+      <a class="button primary" href="https://www.freelancer.com/service/debugging/minecraft-crash-log-and-small-bug-diagnosis">Use Freelancer small bug diagnosis</a>
+    </section>
+  </main>
+</body>
+</html>

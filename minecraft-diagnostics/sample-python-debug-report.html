@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Python / Website Bug Diagnostic</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section>
+      <p class="eyebrow">Sample $15 report</p>
+      <h1>Small Python Or Website Bug Diagnosis</h1>
+      <p>This sample shows the format for one small error, snippet, or build/config issue.</p>
+    </section>
+
+    <section>
+      <h2>Likely Cause</h2>
+      <p>The script is reading a CSV column that does not exist after trimming whitespace from headers.</p>
+    </section>
+
+    <section>
+      <h2>Suspicious File / Error</h2>
+      <pre><code>KeyError: 'email'
+df['email'] = df['email'].str.lower()</code></pre>
+      <p>The CSV appears to contain `Email ` with a trailing space, while the script expects `email`.</p>
+    </section>
+
+    <section>
+      <h2>Minimal Fix Steps</h2>
+      <ol>
+        <li>Normalize headers immediately after loading the file.</li>
+        <li>Print `df.columns.tolist()` before accessing the column.</li>
+        <li>Re-run the script with a small sample CSV.</li>
+      </ol>
+      <pre><code>df.columns = df.columns.str.strip().str.lower()</code></pre>
+      <a class="button primary" href="https://www.freelancer.com/service/python/small-python-or-website-bug-diagnosis">Order on Freelancer</a>
+    </section>
+  </main>
+</body>
+</html>

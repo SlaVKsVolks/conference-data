@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modpack Test Harness Proof</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section>
+      <p class="eyebrow">Technical proof</p>
+      <h1>Modpack Test Harness diagnostic workflow</h1>
+      <p class="lead">This is the local Minecraft workflow I use to reason about harder crash, startup, and modpack performance cases. It is not required for every quick $5 log read, but it is the proof that the service is backed by real modpack instrumentation instead of guesswork.</p>
+      <nav aria-label="Proof page actions">
+        <a class="button primary" href="https://ko-fi.com/s/7ca8291a5a">Order $20 mini-audit</a>
+        <a class="button" href="index.html">Back to offers</a>
+      </nav>
+    </section>
+
+    <section>
+      <h2>What The Harness Does</h2>
+      <div class="proof-grid">
+        <article class="proof-card">
+          <strong>Phase markers</strong>
+          <span>Records boot, resource reload, model bake, shader initialization, menu visibility, world readiness, route completion, and cleanup phases.</span>
+        </article>
+        <article class="proof-card">
+          <strong>Route-aware attribution</strong>
+          <span>Separates first-load and route-critical windows from later background work, which helps identify whether a mod is blocking launch, world entry, or gameplay.</span>
+        </article>
+        <article class="proof-card">
+          <strong>Runtime evidence</strong>
+          <span>Captures heap, non-heap, cleanup, scheduler, and mod-specific event signals that can be condensed into buyer-readable findings.</span>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Signals Already Covered</h2>
+      <ul>
+        <li>NeoForge 1.21.1 client/server lifecycle hooks.</li>
+        <li>Xaero world-map route work execution and deferral counters.</li>
+        <li>Voxy direct-entry renderer lifecycle compatibility signals.</li>
+        <li>Sodium chunk upload backlog and frame-budget pressure.</li>
+        <li>EMI, JEI, ClientSort, YACL, and Advanced Loot Info startup deferrals.</li>
+        <li>ResourcefulLib, Connector Extras, Inventory Particles, and shader/model cleanup events.</li>
+        <li>Network/config payload diagnostics for startup handshake failures.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Buyer-Facing Output</h2>
+      <p>A harness-backed mini-audit is still delivered as a plain written report. The buyer does not need remote access, credentials, or private server control.</p>
+      <div class="two-column">
+        <div>
+          <h3>You send</h3>
+          <ul>
+            <li>Crash report or latest.log</li>
+            <li>Minecraft version and loader</li>
+            <li>Modlist if available</li>
+            <li>What changed before the issue started</li>
+          </ul>
+        </div>
+        <div>
+          <h3>I return</h3>
+          <ul>
+            <li>Likely cause category</li>
+            <li>Suspicious line, mod, class, or phase</li>
+            <li>First safe fix steps</li>
+            <li>When useful, what deeper harness run would test next</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Example Evidence Shape</h2>
+      <pre><code>phase=RESOURCE_RELOAD_START source=screen
+phase=MODEL_BAKE_START source=resource_reload_start
+phase=WORLD_READY heap_used_percent=74.8
+event_type=runtime_cleanup stack_key=memory_recovery recovered_mb=590
+event_type=xaero_route_work deferred_total=128 executed_total=12
+phase=REPRESENTATIVE_ROUTE_COMPLETED route_elapsed_ms=35243</code></pre>
+      <p>The actual report focuses on interpretation: what probably broke, what line or mod points to it, and what to try first.</p>
+    </section>
+
+    <section>
+      <h2>Limits</h2>
+      <ul>
+        <li>No guaranteed fix or FPS promise.</li>
+        <li>No remote access by default.</li>
+        <li>No credentials, server panel access, or private financial/tax data.</li>
+        <li>The quick $5 offer is a log read, not a full harness benchmark.</li>
+      </ul>
+      <a class="button primary" href="https://ko-fi.com/s/f633f838e4">Order $5 quick read</a>
+      <a class="button" href="https://ko-fi.com/s/7ca8291a5a">Order $20 mini-audit</a>
+    </section>
+  </main>
+</body>
+</html>

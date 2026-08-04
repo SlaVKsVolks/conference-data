@@ -35,3 +35,8 @@ Safety:
 - No account credentials.
 - No guaranteed fix.
 - One issue per order.
+## Navigation
+
+- [Back to `conference-data`](../../README.md)
+- [Back to `REPOS`](../../../README.md)
+- [Back to `AI_REVENUE_SPRINT_100_24H`](../../../../README.md)

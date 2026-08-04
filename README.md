@@ -56,3 +56,8 @@ If you want to amend or add information to the table, please follow these steps:
 7. Save your changes and submit a pull request with a brief explanation of the changes you made.  
 8. If you are not the organizer, please explain how you acquired the information you are adding to the table.
 9. Once your pull request is reviewed and merged, the changes will be updated to the main branch of the repository.  
+
+## Navigation
+
+- [Back to `REPOS`](../README.md)
+- [Back to `AI_REVENUE_SPRINT_100_24H`](../../README.md)
